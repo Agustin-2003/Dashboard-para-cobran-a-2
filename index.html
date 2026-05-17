@@ -12,42 +12,46 @@
 
     /* ══ BASE DARK TOKENS ══════════════════════════════════════ */
     :root {
-      --bg:#05070a;
-      --bg2:#0a0d14;
-      --surface:rgba(19,25,32,0.7);
-      --surface2:rgba(26,34,48,0.8);
-      --surface3:rgba(32,43,58,0.9);
-      --border:rgba(255,255,255,.06);
-      --border2:rgba(255,255,255,.12);
-      --text:#f1f5f9;
-      --muted:#94a3b8;
-      --faint:rgba(30,45,61,0.5);
-      --inc:#3b82f6;
-      --inc-glow:rgba(59,130,246,.25);
-      --cond:#10b981;
-      --cond-glow:rgba(16,185,129,.2);
-      --multa:#a855f7;
-      --multa-glow:rgba(168,85,247,.2);
-      --flash:#94a3b8;
-      --ate30:#22c55e;
-      --d3160:#eab308;
-      --d6190:#f97316;
-      --d91p:#ef4444;
-      --pago:#10b981;
-      --aberto:#f97316;
+      --bg:#1a1410;
+      --bg2:#251b13;
+      --surface:rgba(50, 35, 22, 0.8);
+      --surface2:rgba(60, 42, 28, 0.85);
+      --surface3:rgba(70, 50, 32, 0.9);
+      --border:rgba(210, 120, 50, .12);
+      --border2:rgba(210, 120, 50, .20);
+      --text:#f5f1eb;
+      --muted:#a89880;
+      --faint:rgba(80, 55, 35, 0.6);
+      --inc:#d27832;
+      --inc-glow:rgba(210, 120, 50, .25);
+      --cond:#d27832;
+      --cond-glow:rgba(210, 120, 50, .2);
+      --multa:#d27832;
+      --multa-glow:rgba(210, 120, 50, .2);
+      --flash:#a89880;
+      --ate30:#e8a860;
+      --d3160:#d97f3c;
+      --d6190:#d27832;
+      --d91p:#c26a2a;
+      --pago:#d27832;
+      --aberto:#e8a860;
       --r:8px;
       --r-md:12px;
       --r-lg:18px;
       --mono:'JetBrains Mono',monospace;
       --sans:'Inter',sans-serif;
       --syne:'Syne',sans-serif;
-      --shadow:0 10px 30px -10px rgba(0,0,0,.5);
-      --shadow-lg:0 20px 50px -15px rgba(0,0,0,.7);
+      --shadow:0 10px 30px -10px rgba(0,0,0,.8);
+      --shadow-lg:0 20px 50px -15px rgba(0,0,0,.9);
       
-      --gold:#c9a84c;
-      --gold-soft:#e8c97a;
-      --gold-glow:rgba(201,168,76,.18);
-      --gold-border:rgba(201,168,76,.22);
+      --gold:#d27832;
+      --gold-soft:#e8a860;
+      --gold-glow:rgba(210, 120, 50, .25);
+      --gold-border:rgba(210, 120, 50, .25);
+      
+      --tulip-dark:#3d2817;
+      --tulip-warm:#d27832;
+      --tulip-light:#e8a860;
     }
 
     /* ══ LIGHT MODE ════════════════════════════════════════════ */
@@ -57,7 +61,7 @@
       --text:#0f172a;--muted:#64748b;--faint:#e2e8f0;
       --shadow:0 4px 12px rgba(0,0,0,.05);--shadow-lg:0 8px 24px rgba(0,0,0,.1);
     }
-    .light-mode .login-bg{background:#f1f5f9}
+    .light-mode .login-bg{background-color:#f1f5f9}
     .light-mode .login-card{background:rgba(255,255,255,.9);border-color:rgba(0,0,0,.1);color:#0f172a}
     .light-mode .login-input{background:#fff;border-color:#cbd5e1;color:#0f172a}
     .light-mode .topbar{background:rgba(255,255,255,.94)}
@@ -106,45 +110,45 @@
     #login-screen{position:fixed;inset:0;z-index:500;display:flex;align-items:center;justify-content:center;overflow:hidden}
     #admin-app{display:none}
     #cons-app{display:none}
-    .login-bg{position:absolute;inset:0;background:radial-gradient(ellipse 100% 70% at 0% 0%,rgba(0,149,200,.08) 0%,transparent 55%),radial-gradient(ellipse 80% 60% at 100% 100%,rgba(0,100,160,.06) 0%,transparent 55%),linear-gradient(160deg,#0a0f1c 0%,#060910 45%,#040810 100%)}
-    .login-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(0,149,200,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,149,200,.04) 1px,transparent 1px);background-size:60px 60px}
-    .login-glow-1{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(0,149,200,.06) 0%,transparent 70%);top:-150px;right:10%;pointer-events:none;animation:glowDrift 14s ease-in-out infinite}
-    .login-glow-2{position:absolute;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(0,80,140,.07) 0%,transparent 70%);bottom:-80px;left:5%;pointer-events:none;animation:glowDrift 18s ease-in-out infinite reverse}
+    .login-bg{position:absolute;inset:0;background-image:linear-gradient(135deg, rgba(210, 120, 50, 0.35) 0%, rgba(210, 120, 50, 0.15) 40%, rgba(61, 40, 23, 0.6) 100%), linear-gradient(to bottom, rgba(210, 120, 50, 0.2) 0%, rgba(80, 55, 35, 0.4) 50%, rgba(30, 20, 10, 0.8) 100%), radial-gradient(ellipse 100% 70% at 0% 0%, rgba(210, 120, 50, .12) 0%, transparent 55%), radial-gradient(ellipse 80% 60% at 100% 100%, rgba(150, 80, 30, .1) 0%, transparent 55%), linear-gradient(160deg, #2a1810 0%, #1a0f08 45%, #0f0805 100%);background-size:cover,cover,auto,auto,auto;background-position:center center,center center,center top,center bottom,center center;filter:brightness(1.1);}
+    .login-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(210, 120, 50, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(210, 120, 50, .05) 1px, transparent 1px);background-size:60px 60px}
+    .login-glow-1{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle, rgba(210, 120, 50, .1) 0%, transparent 70%);top:-150px;right:10%;pointer-events:none;animation:glowDrift 14s ease-in-out infinite}
+    .login-glow-2{position:absolute;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle, rgba(150, 80, 30, .1) 0%, transparent 70%);bottom:-80px;left:5%;pointer-events:none;animation:glowDrift 18s ease-in-out infinite reverse}
     @keyframes glowDrift{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-15px)}}
-    .login-card{position:relative;z-index:1;width:100%;max-width:420px;background:rgba(10,15,26,.92);border:1px solid rgba(0,149,200,.15);border-radius:20px;padding:42px 38px 38px;backdrop-filter:blur(28px);box-shadow:0 32px 80px rgba(0,0,0,.7),0 0 0 1px rgba(0,149,200,.06) inset,0 0 60px -20px rgba(0,149,200,.12);animation:cardIn .7s cubic-bezier(.23,1,.32,1) both}
+    .login-card{position:relative;z-index:1;width:100%;max-width:420px;background:rgba(37, 27, 19, .95);border:1px solid rgba(210, 120, 50, .25);border-radius:20px;padding:42px 38px 38px;backdrop-filter:blur(28px);box-shadow:0 32px 80px rgba(0,0,0,.9), 0 0 0 1px rgba(210, 120, 50, .15) inset, 0 0 60px -20px rgba(210, 120, 50, .2);animation:cardIn .7s cubic-bezier(.23,1,.32,1) both}
     @keyframes cardIn{from{opacity:0;transform:translateY(30px) scale(.96)}to{opacity:1;transform:none}}
-    .schw-nav{position:absolute;top:0;left:0;right:0;height:72px;z-index:5;background:rgba(8,11,18,0.96);border-bottom:1px solid rgba(0,149,200,.18);display:flex;align-items:center;justify-content:center;padding:0 48px;backdrop-filter:blur(10px)}
+    .schw-nav{position:absolute;top:0;left:0;right:0;height:72px;z-index:5;background:rgba(26, 18, 12, 0.98);border-bottom:1px solid rgba(210, 120, 50, .25);display:flex;align-items:center;justify-content:center;padding:0 48px;backdrop-filter:blur(10px)}
     .schw-logo-wrap{display:flex;align-items:center;gap:12px}
     .schw-logo-text-block{text-align:right}
-    .schw-logo-name{font-family:var(--syne);font-size:16px;font-weight:800;letter-spacing:3px;color:#fff;line-height:1}
-    .schw-logo-sub{font-size:8px;letter-spacing:3px;color:rgba(255,255,255,.35);text-transform:uppercase;margin-top:2px}
+    .schw-logo-name{font-family:var(--syne);font-size:16px;font-weight:800;letter-spacing:3px;color:#f5f1eb;line-height:1}
+    .schw-logo-sub{font-size:8px;letter-spacing:3px;color:rgba(232, 168, 96, .6);text-transform:uppercase;margin-top:2px}
     .schw-card-brand{display:flex;flex-direction:column;align-items:center;gap:0;margin-bottom:28px;animation:fadeUp .5s .1s both}
     @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-    .schw-card-logo-icon{margin-bottom:14px;filter:drop-shadow(0 0 18px rgba(0,149,200,.4))}
-    .schw-card-name{font-family:var(--syne);font-size:26px;font-weight:800;letter-spacing:5px;color:#fff;line-height:1;text-align:center}
-    .schw-card-sub{font-size:9.5px;letter-spacing:4px;color:#0095c8;margin-top:5px;font-family:var(--sans);font-weight:600;text-transform:uppercase;text-align:center}
-    .login-divider{height:1px;background:rgba(0,149,200,.12);margin-bottom:26px;animation:fadeUp .5s .15s both}
-    .login-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:rgba(0,149,200,.7);font-family:var(--mono);margin-bottom:20px;animation:fadeUp .5s .2s both}
+    .schw-card-logo-icon{margin-bottom:14px;filter:drop-shadow(0 0 18px rgba(210, 120, 50, .5))}
+    .schw-card-name{font-family:var(--syne);font-size:26px;font-weight:800;letter-spacing:5px;color:#f5f1eb;line-height:1;text-align:center}
+    .schw-card-sub{font-size:9.5px;letter-spacing:4px;color:#d27832;margin-top:5px;font-family:var(--sans);font-weight:600;text-transform:uppercase;text-align:center}
+    .login-divider{height:1px;background:rgba(210, 120, 50, .15);margin-bottom:26px;animation:fadeUp .5s .15s both}
+    .login-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:rgba(210, 120, 50, .7);font-family:var(--mono);margin-bottom:20px;animation:fadeUp .5s .2s both}
     .login-field{margin-bottom:14px;animation:fadeUp .5s .25s both}
     .login-field:nth-child(2){animation-delay:.30s}
     .field-label{font-size:11px;color:var(--muted);font-family:var(--mono);margin-bottom:6px;display:block}
     .field-wrap{position:relative}
-    .field-ico{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:rgba(0,149,200,.5);pointer-events:none}
-    .login-input{width:100%;background:rgba(0,149,200,.04);border:1px solid rgba(0,149,200,.15);color:var(--text);font-family:var(--sans);font-size:13px;padding:11px 14px 11px 40px;border-radius:var(--r-md);outline:none;transition:border-color .2s,background .2s}
-    .login-input:focus{border-color:rgba(0,149,200,.6);background:rgba(0,149,200,.07)}
-    .login-input::placeholder{color:#2a3a50}
+    .field-ico{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:rgba(210, 120, 50, .6);pointer-events:none}
+    .login-input{width:100%;background:rgba(210, 120, 50, .08);border:1px solid rgba(210, 120, 50, .2);color:var(--text);font-family:var(--sans);font-size:13px;padding:11px 14px 11px 40px;border-radius:var(--r-md);outline:none;transition:border-color .2s,background .2s}
+    .login-input:focus{border-color:rgba(210, 120, 50, .7);background:rgba(210, 120, 50, .12)}
+    .login-input::placeholder{color:#6b5240}
     .pw-toggle{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--muted);cursor:pointer;padding:2px;transition:color .15s;line-height:0}
     .pw-toggle:hover{color:var(--text)}
-    .login-btn{width:100%;margin-top:22px;padding:13px;background:linear-gradient(135deg,#0095c8,#0070a8);border:none;border-radius:var(--r-md);font-family:var(--syne);font-size:14px;font-weight:800;color:#fff;cursor:pointer;letter-spacing:2px;text-transform:uppercase;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 6px 24px rgba(0,149,200,.35);animation:fadeUp .5s .4s both}
-    .login-btn:hover{opacity:.92;transform:translateY(-2px);box-shadow:0 10px 32px rgba(0,149,200,.45)}
+    .login-btn{width:100%;margin-top:22px;padding:13px;background:linear-gradient(135deg, #d27832, #c26a2a);border:none;border-radius:var(--r-md);font-family:var(--syne);font-size:14px;font-weight:800;color:#fff;cursor:pointer;letter-spacing:2px;text-transform:uppercase;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 6px 24px rgba(210, 120, 50, .4);animation:fadeUp .5s .4s both}
+    .login-btn:hover{opacity:.92;transform:translateY(-2px);box-shadow:0 10px 32px rgba(210, 120, 50, .5)}
     .login-btn:active{transform:translateY(0)}
     .login-btn:disabled{opacity:.45;cursor:default;transform:none}
-    .login-footer{margin-top:24px;text-align:center;font-size:10px;color:#1a2a3a;font-family:var(--mono);animation:fadeUp .5s .5s both}
+    .login-footer{margin-top:24px;text-align:center;font-size:10px;color:#4a3630;font-family:var(--mono);animation:fadeUp .5s .5s both}
     .screen-fade-out{animation:screenFadeOut .45s ease forwards}
     @keyframes screenFadeOut{to{opacity:0;pointer-events:none}}
 
     /* ══ TOPBAR ════════════════════════════════════════════════ */
-    .topbar{display:flex;align-items:center;justify-content:space-between;padding:0 28px;height:60px;background:rgba(8,11,16,.94);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;backdrop-filter:blur(14px)}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:0 28px;height:60px;background:rgba(26, 18, 12, 0.96);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;backdrop-filter:blur(14px)}
     .topbar-brand{display:flex;align-items:center;gap:12px}
     .brand-dot{width:8px;height:8px;border-radius:50%;background:var(--acc,var(--inc));box-shadow:0 0 10px var(--acc,var(--inc));animation:pulse 2.4s infinite}
     @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
@@ -176,16 +180,16 @@
     .btn-logout:hover{background:rgba(239,68,68,.15)}
 
     /* ══ TABS ══════════════════════════════════════════════════ */
-    .tabs-bar{display:flex;gap:2px;padding:0 28px;border-bottom:1px solid var(--border);overflow-x:auto}
+    .tabs-bar{display:flex;gap:2px;padding:0 28px;border-bottom:1px solid var(--border);background:rgba(26, 18, 12, 0.94);overflow-x:auto}
     .tab-btn{padding:14px 20px;font-family:var(--sans);font-size:13px;font-weight:500;border:none;background:transparent;color:var(--muted);cursor:pointer;transition:color .15s;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
     .tab-btn:hover{color:var(--text)}
-    .tab-btn.active-all{color:var(--text);border-bottom-color:var(--text)}
-    .tab-btn.active-inc{color:var(--inc);border-bottom-color:var(--inc)}
-    .tab-btn.active-cond{color:var(--cond);border-bottom-color:var(--cond)}
-    .tab-btn.active-multa{color:var(--multa);border-bottom-color:var(--multa)}
+    .tab-btn.active-all{color:var(--text);border-bottom-color:var(--gold)}
+    .tab-btn.active-inc{color:var(--gold);border-bottom-color:var(--gold)}
+    .tab-btn.active-cond{color:var(--gold);border-bottom-color:var(--gold)}
+    .tab-btn.active-multa{color:var(--gold);border-bottom-color:var(--gold)}
     .tab-btn.active-neg{color:#f59e0b;border-bottom-color:#f59e0b}
-    .tab-btn.active-hist{color:var(--inc);border-bottom-color:var(--inc)}
-    .tab-btn.active-config{color:var(--cond);border-bottom-color:var(--cond)}
+    .tab-btn.active-hist{color:var(--gold);border-bottom-color:var(--gold)}
+    .tab-btn.active-config{color:var(--gold);border-bottom-color:var(--gold)}
 
     /* ══ MAIN ══════════════════════════════════════════════════ */
     .main{padding:24px 28px 80px}
@@ -339,26 +343,30 @@
       --border2:rgba(236,72,153,.18);--inc:#ec4899;--inc-glow:rgba(236,72,153,.18)
     }
 
-    /* ── Stéfano / Masculinos: t-blue — PRETO/BRANCO/DOURADO ── */
+    /* ── Stéfano / Masculinos: t-blue — LARANJA TULIP ── */
     .t-blue {
       --acc:var(--gold);
       --acc-soft:var(--gold-soft);
       --acc-glow:var(--gold-glow);
-      --bg:#020305;
-      --bg2:#04060c;
-      --surface:rgba(8,12,20,0.92);
-      --surface2:rgba(12,18,30,0.94);
-      --surface3:rgba(16,24,40,0.97);
-      --faint:rgba(10,15,28,0.8);
-      --border:rgba(201,168,76,.07);
-      --border2:rgba(201,168,76,.15);
+      --bg:#1a1410;
+      --bg2:#251b13;
+      --surface:rgba(50, 35, 22, 0.92);
+      --surface2:rgba(60, 42, 28, 0.94);
+      --surface3:rgba(70, 50, 32, 0.97);
+      --faint:rgba(50, 35, 22, 0.8);
+      --border:rgba(210, 120, 50, .08);
+      --border2:rgba(210, 120, 50, .18);
       --inc:var(--gold);
       --inc-glow:var(--gold-glow);
-      --pago:#c9a84c;
-      --aberto:#e07b3a;
-      --text:#f0ece4;
-      --muted:#8a8070
+      --pago:#d27832;
+      --aberto:#e8a860;
+      --text:#f5f1eb;
+      --muted:#a89880;
     }
+    
+    /* ── ADM Admin: Coloração laranja dourada ─────────── */
+    .adm-dark-mode .topbar{background:rgba(26, 18, 12, 0.98);border-bottom:1px solid var(--gold-border)}
+    .adm-dark-mode .tabs-bar{background:rgba(26, 18, 12, 0.95);border-bottom:1px solid var(--gold-border)}
 
     /* ── Rhoan: t-teal — verde-dark para Condomínio ─────────── */
     .t-teal {
@@ -376,13 +384,13 @@
     #cons-app.t-teal{background:var(--bg)}
 
     /* ── t-blue: overrides especiais ─────────────────────────── */
-    .t-blue .topbar{background:rgba(2,3,5,0.98);border-bottom:1px solid var(--gold-border)}
+    .t-blue .topbar{background:rgba(26, 18, 12, 0.98);border-bottom:1px solid var(--gold-border)}
     .t-blue .brand-title{color:var(--gold-soft)}
-    .t-blue .kpi{border-color:rgba(201,168,76,.08)}
+    .t-blue .kpi{border-color:rgba(210, 120, 50, .1)}
     .t-blue .kpi:hover{border-color:var(--gold-border)}
-    .t-blue .faixa-card{border-color:rgba(201,168,76,.06)}
+    .t-blue .faixa-card{border-color:rgba(210, 120, 50, .08)}
     .t-blue .cons-hero{background:var(--bg2);border-bottom:1px solid var(--gold-border)}
-    .t-blue .prog-fill{background:linear-gradient(90deg,var(--gold),var(--gold-soft))}
+    .t-blue .prog-fill{background:linear-gradient(90deg, var(--gold), var(--gold-soft))}
     .t-blue .prog-pct{color:var(--gold)}
     .t-blue .faixa-pago{color:var(--gold)}
     /* Linha dourada sutil no topo das KPI cards */
@@ -484,23 +492,8 @@
       </div>
     </div>
     <button class="login-btn" id="loginBtn" type="submit">ENTRAR</button>
-    <div class="login-media">
-      <div class="login-media-title">Mídia do projeto</div>
-      <div class="login-media-desc">Acesse o material enviado direto na tela de login. Você pode abrir a visualização ou usar o link público para abrir no Drive.</div>
-      <div class="login-media-info">
-        <button type="button" class="login-media-button" onclick="openLoginMedia()">Ver mídia</button>
-        <a class="login-media-link" href="https://drive.google.com/file/d/1aub_zwb3OFf0jGHpEhOOTn2ekqnoMCWL/view?usp=drive_link" target="_blank" rel="noopener">Abrir no Drive</a>
-      </div>
-    </div>
     <div class="login-footer">schwanckempreendimentos.com.br</div>
   </form>
-</div>
-
-<div class="login-media-overlay" id="loginMediaOverlay" onclick="closeLoginMedia(event)">
-  <div class="login-media-frame" onclick="event.stopPropagation()">
-    <button class="modal-close" type="button" onclick="closeLoginMedia()">✕</button>
-    <iframe id="loginMediaIframe" src="https://drive.google.com/file/d/1aub_zwb3OFf0jGHpEhOOTn2ekqnoMCWL/preview" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-  </div>
 </div>
 
 <!-- ═══════════════════════ ADMIN APP ════════════════════════ -->
